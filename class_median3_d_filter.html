@@ -190,7 +190,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Applies the median filter to a volume.</p>
-<p>This method applies the median filtering process to a given volume, using the precomputed neighborhood offsets to calculate the median value for each voxel's neighborhood. It iterates through each voxel in the volume, collects the intensity values of its neighbors, calculates the median of these values, and sets the voxel's new value to this median. The process effectively reduces noise in the volume data while preserving the edges of structures within the volume.</p>
+<p>This method applies the median filter to a 3D volume represented by a <a class="el" href="class_volume.html">Volume</a> object. The filter iterates through each voxel in the volume and replaces its value with the median value from the neighborhood around that voxel. The neighborhood size is determined by the kernel size specified during object creation. The median filter is a powerful tool for reducing noise in volume data while preserving structural details. This method efficiently computes the median values using precomputed neighborhood offsets to enhance the performance of the filtering operation. Histogram equalization is a critical step in enhancing the contrast of images and improving their visual quality.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">volume</td><td>A reference to a <a class="el" href="class_volume.html">Volume</a> object representing the 3D data to which the median filter will be applied. </td></tr>

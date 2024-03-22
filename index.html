@@ -141,8 +141,10 @@ Project Structure</h1>
 <div class="line">│   ├── Slice.cpp</div>
 <div class="line">│   ├── Volume.cpp</div>
 <div class="line">│   └── main.cpp</div>
-<div class="line">│</div>
-<div class="line">└── Tests/                       - Unit tests.</div>
+<div class="line">├── Tests/                       - Unit tests.</div>
+<div class="line">├── RunExecutable                - Executable file for the project.</div>
+<div class="line">├── RunMain.sh                   - Script to cmake, build and run the main program.</div>
+<div class="line">└── RunTest.sh                   - Script to cmake, build and run the test framwork.</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Getting Started</h1>
 <h2><a class="anchor" id="autotoc_md4"></a>
@@ -154,14 +156,12 @@ Prerequisites</h2>
 <p>Ensure you have a modern C++ compiler that supports C++17 and the CMake build system installed on your system. This project also requires the <code>filesystem</code> library for directory operations.</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Building the Project</h2>
-<p>We have a shell script to automatically run the build commands, do the unit tests and start the command line user interface.</p>
-<p>You can simply run command below in your terminal and everything will be done directly.</p>
-<div class="fragment"><div class="line">./run.sh</div>
-</div><!-- fragment --><p>If you prefer using CMake and want to build the project manually, Please follow:</p>
+<p>We have scripts to automatically run the build commands, do the unit tests and start the command line user interface.</p>
+<p>If you prefer using CMake and want to build the project manually, Please follow:</p>
 <ol type="1">
 <li>Clone the repository to your local machine.</li>
 <li><p class="startli">Navigate to the project directory and create a build directory:</p>
-<div class="fragment"><div class="line">mkdir build &amp;&amp; cd build</div>
+<div class="fragment"><div class="line">mkdir Build &amp;&amp; cd Build</div>
 </div><!-- fragment --></li>
 <li><p class="startli">Run CMake to configure the project:</p>
 <div class="fragment"><div class="line">cmake ..</div>
@@ -173,8 +173,16 @@ Building the Project</h2>
 <p>The CMakeList files have turned on the compilation optimization by default.</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Usage</h1>
-<p>We prefer users to operate through the interface we've provided. Please follow the instructions above to build and run the project.</p>
-<p>To use the library in your project, include the necessary header files from the <code>Include</code> directory and link against the compiled library.</p>
+<p>We prefer users to operate through the interface we've provided. Please follow the instructions below to build and run the project.</p>
+<p><b>Run Executable</b></p>
+<p>We have included a executable file (Linux platform) in the root directory.</p>
+<div class="fragment"><div class="line">./RunExecutable</div>
+</div><!-- fragment --><p><b>Run Unit Tests</b></p>
+<p>Make sure 3D datases are downloaded and put to <code>./Scans</code>.</p>
+<div class="fragment"><div class="line">./RunTest.sh</div>
+</div><!-- fragment --><p><b>Run Main User Interface</b></p>
+<div class="fragment"><div class="line">./RunMain.sh</div>
+</div><!-- fragment --><p>To use the library in your project, include the necessary header files from the <code>Include</code> directory and link against the compiled library.</p>
 <p>Here's an example demonstrating how to load a image / volume from disk, apply various filters, and save a filtered file / maximum intensity projection:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_volume_8h.html">Volume.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_image_8h.html">Image.h</a>&quot;</span></div>
@@ -230,8 +238,8 @@ Usage</h1>
 <div class="ttc" id="aclass_gaussian2_d_filter_html"><div class="ttname"><a href="class_gaussian2_d_filter.html">Gaussian2DFilter</a></div><div class="ttdef"><b>Definition</b> Gaussian2DFilter.h:36</div></div>
 <div class="ttc" id="aclass_gaussian3_d_filter_html"><div class="ttname"><a href="class_gaussian3_d_filter.html">Gaussian3DFilter</a></div><div class="ttdef"><b>Definition</b> Gaussian3DFilter.h:33</div></div>
 <div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition</b> Image.h:33</div></div>
-<div class="ttc" id="aclass_image_html_a1e5bba4e0dc67e2a93bd0d90e9c71e97"><div class="ttname"><a href="class_image.html#a1e5bba4e0dc67e2a93bd0d90e9c71e97">Image::saveToFile</a></div><div class="ttdeci">bool saveToFile(const std::string &amp;path) const</div><div class="ttdef"><b>Definition</b> Image.cpp:105</div></div>
-<div class="ttc" id="aclass_image_html_aaf2ae83a1369ab29535ebfd06554e59f"><div class="ttname"><a href="class_image.html#aaf2ae83a1369ab29535ebfd06554e59f">Image::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> Image.cpp:90</div></div>
+<div class="ttc" id="aclass_image_html_a1e5bba4e0dc67e2a93bd0d90e9c71e97"><div class="ttname"><a href="class_image.html#a1e5bba4e0dc67e2a93bd0d90e9c71e97">Image::saveToFile</a></div><div class="ttdeci">bool saveToFile(const std::string &amp;path) const</div><div class="ttdef"><b>Definition</b> Image.cpp:106</div></div>
+<div class="ttc" id="aclass_image_html_aaf2ae83a1369ab29535ebfd06554e59f"><div class="ttname"><a href="class_image.html#aaf2ae83a1369ab29535ebfd06554e59f">Image::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> Image.cpp:91</div></div>
 <div class="ttc" id="aclass_pixel_filter_html"><div class="ttname"><a href="class_pixel_filter.html">PixelFilter</a></div><div class="ttdef"><b>Definition</b> PixelFilter.h:35</div></div>
 <div class="ttc" id="aclass_volume_html"><div class="ttname"><a href="class_volume.html">Volume</a></div><div class="ttdef"><b>Definition</b> Volume.h:37</div></div>
 <div class="ttc" id="aclass_volume_html_a7cefc977aa07f53dd0ead4b1f6a285a9"><div class="ttname"><a href="class_volume.html#a7cefc977aa07f53dd0ead4b1f6a285a9">Volume::save</a></div><div class="ttdeci">void save(const std::string &amp;path, const std::string &amp;plane) const</div><div class="ttdef"><b>Definition</b> Volume.cpp:183</div></div>

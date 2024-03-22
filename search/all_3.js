@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['calculatehistogramandcdf_0',['calculateHistogramAndCDF',['../class_pixel_filter.html#a80ed72f4a8b64136375ae92cd092935a',1,'PixelFilter']]],
-  ['calculatemedian_1',['calculateMedian',['../class_median3_d_filter.html#afc32a887e33f77f8faaa38d661f97104',1,'Median3DFilter']]],
-  ['channels_2',['channels',['../class_image.html#a73572ed4b7f15054c5a598c6aabffd86',1,'Image']]],
-  ['computegaussian1dkernel_3',['computeGaussian1DKernel',['../class_gaussian3_d_filter.html#a83c65ba49c7e6380a8542f298abaa33b',1,'Gaussian3DFilter']]],
-  ['contributing_4',['Contributing',['../index.html#autotoc_md8',1,'']]],
-  ['converttograyscale_5',['convertToGrayscale',['../class_pixel_filter.html#a8743f159b8015bc45089df80f4a7785b',1,'PixelFilter']]]
+  ['box2dfilter_0',['Box2DFilter',['../class_box2_d_filter.html',1,'Box2DFilter'],['../class_box2_d_filter.html#a51e4ef32d79487e8fb4c8021171a48c2',1,'Box2DFilter::Box2DFilter()']]],
+  ['box2dfilter_2ecpp_1',['Box2DFilter.cpp',['../_box2_d_filter_8cpp.html',1,'']]],
+  ['box2dfilter_2ecpp_2eo_2ed_2',['Box2DFilter.cpp.o.d',['../_box2_d_filter_8cpp_8o_8d.html',1,'']]],
+  ['box2dfilter_2eh_3',['Box2DFilter.h',['../_box2_d_filter_8h.html',1,'']]],
+  ['brightness_4',['brightness',['../class_pixel_filter.html#a2b50bd74e4306c304b9c558caf48cd99',1,'PixelFilter']]],
+  ['building_20the_20project_5',['Building the Project',['../index.html#autotoc_md6',1,'']]]
 ];
