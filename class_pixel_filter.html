@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if any parameter is outside its expected range based on the filter type.</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if any parameter is outside its expected range based on the filter type. </td></tr>
   </table>
   </dd>
 </dl>
@@ -232,7 +232,7 @@ Private Attributes</h2></td></tr>
 <p>This method introduces salt-and-pepper noise to the provided <a class="el" href="class_image.html">Image</a> object by randomly selecting a specified percentage of pixels and setting them to either the maximum value (255, salt) or the minimum value (0, pepper). This operation is designed to simulate common types of noise found in digital images.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object that will have noise added. The image is modified in place.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object that will have noise added. The image is modified in place. </td></tr>
   </table>
   </dd>
 </dl>
@@ -265,7 +265,7 @@ Private Attributes</h2></td></tr>
 <p>This method modifies the brightness of each pixel in the provided <a class="el" href="class_image.html">Image</a> object based on a specified brightness adjustment value. The brightness is adjusted by adding the brightness value to each pixel's intensity, with the result clamped to the [0, 255] range. The operation affects all channels of the image equally.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object whose brightness will be adjusted. The image is modified in place.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object whose brightness will be adjusted. The image is modified in place. </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if the filter type is unsupported.</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if the filter type is unsupported. </td></tr>
   </table>
   </dd>
 </dl>
@@ -344,7 +344,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>A reference to a vector of floats representing the normalized intensity values of a single channel of the image, to be modified in place. </td></tr>
-    <tr><td class="paramname">cdf</td><td>A vector of ints representing the CDF, used to map the original intensities to their new values.</td></tr>
+    <tr><td class="paramname">cdf</td><td>A vector of ints representing the CDF, used to map the original intensities to their new values. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,7 +388,7 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">channel</td><td>A vector of floats representing the normalized intensity values of a single channel of the image. </td></tr>
     <tr><td class="paramname">histogram</td><td>A reference to a vector of ints where the histogram data will be stored. </td></tr>
-    <tr><td class="paramname">cdf</td><td>A reference to a vector of ints where the CDF data will be stored.</td></tr>
+    <tr><td class="paramname">cdf</td><td>A reference to a vector of ints where the CDF data will be stored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -421,7 +421,7 @@ Private Attributes</h2></td></tr>
 <p>This method transforms a color image into grayscale by calculating the luminance of each pixel based on its red, green, and blue components. The grayscale image replaces the original image data. This operation is performed only if the image has more than one color channel.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object to be converted to grayscale. The image is modified in place.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object to be converted to grayscale. The image is modified in place. </td></tr>
   </table>
   </dd>
 </dl>
@@ -454,7 +454,7 @@ Private Attributes</h2></td></tr>
 <p>This method applies histogram equalization to the provided <a class="el" href="class_image.html">Image</a> object, enhancing the contrast of the image. It can operate on different color spaces, including RGB, HSL, and HSV. For color images, the equalization is applied to the luminance or value channel, preserving color integrity while improving contrast. This method is suitable for images that suffer from poor contrast due to lighting conditions or exposure settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object whose histogram will be equalized. The image is modified in place.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object whose histogram will be equalized. The image is modified in place. </td></tr>
   </table>
   </dd>
 </dl>
@@ -516,7 +516,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">l</td><td>The lightness component in HSL space. </td></tr>
     <tr><td class="paramname">r</td><td>Reference to a float to store the calculated red component in RGB space. </td></tr>
     <tr><td class="paramname">g</td><td>Reference to a float to store the calculated green component in RGB space. </td></tr>
-    <tr><td class="paramname">b</td><td>Reference to a float to store the calculated blue component in RGB space.</td></tr>
+    <tr><td class="paramname">b</td><td>Reference to a float to store the calculated blue component in RGB space. </td></tr>
   </table>
   </dd>
 </dl>
@@ -578,7 +578,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">v</td><td>The value component of the color. </td></tr>
     <tr><td class="paramname">r</td><td>Reference to a float to store the red component. </td></tr>
     <tr><td class="paramname">g</td><td>Reference to a float to store the green component. </td></tr>
-    <tr><td class="paramname">b</td><td>Reference to a float to store the blue component.</td></tr>
+    <tr><td class="paramname">b</td><td>Reference to a float to store the blue component. </td></tr>
   </table>
   </dd>
 </dl>
@@ -641,7 +641,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">h</td><td>Reference to a float to store the hue component. </td></tr>
     <tr><td class="paramname">s</td><td>Reference to a float to store the saturation component. </td></tr>
     <tr><td class="paramname">l</td><td>Reference to a float to store the light </td></tr>
-    <tr><td class="paramname">l</td><td>Reference to a float to store the lightness component.</td></tr>
+    <tr><td class="paramname">l</td><td>Reference to a float to store the lightness component. </td></tr>
   </table>
   </dd>
 </dl>
@@ -703,7 +703,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">b</td><td>The blue component of the color. </td></tr>
     <tr><td class="paramname">h</td><td>Reference to a float to store the hue component. </td></tr>
     <tr><td class="paramname">s</td><td>Reference to a float to store the saturation component. </td></tr>
-    <tr><td class="paramname">v</td><td>Reference to a float to store the value component.</td></tr>
+    <tr><td class="paramname">v</td><td>Reference to a float to store the value component. </td></tr>
   </table>
   </dd>
 </dl>
@@ -736,7 +736,7 @@ Private Attributes</h2></td></tr>
 <p>This method applies a thresholding operation to the provided <a class="el" href="class_image.html">Image</a> object. Pixels with intensity above the threshold are set to the maximum value (255), and those below are set to zero, effectively binarizing the image. The operation can be applied to images in different color spaces, including RGB, HSL, and HSV, based on the specified parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object to be thresholded. The image is modified in place.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object to be thresholded. The image is modified in place. </td></tr>
   </table>
   </dd>
 </dl>

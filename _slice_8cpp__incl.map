@@ -1,11 +1,13 @@
 <map id="Source/Slice.cpp" name="Source/Slice.cpp">
-<area shape="rect" id="Node000001" title="Implements functionality to extract 2D slices from a 3D volume." alt="" coords="229,5,349,31"/>
+<area shape="rect" id="Node000001" title="Implements functionality to extract 2D slices from a 3D volume." alt="" coords="262,5,382,31"/>
 <area shape="rect" id="Node000002" href="$_slice_8h.html" title="Facilitates extraction of 2D slices from 3D volume data." alt="" coords="161,79,222,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,34,221,72,218,68,271,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,34,228,74,225,69,299,29"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="262,226,315,252"/>
-<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="291,31,291,211,286,211,286,31"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="326,79,398,105"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="303,29,341,66,337,70,299,33"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="323,32,295,211,290,210,318,31"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="327,79,387,105"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="330,30,346,64,342,66,325,32"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="410,79,482,105"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="344,29,413,69,411,73,342,34"/>
 <area shape="rect" id="Node000003" href="$_volume_8h.html" title="Manages 3D volumetric data for processing and analysis." alt="" coords="124,153,200,178"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="189,106,175,139,170,137,184,104"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="5,226,63,252"/>

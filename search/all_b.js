@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['kernel_0',['kernel',['../class_gaussian2_d_filter.html#a404fd6b1492b45a27ef8bd95aa7d92c2',1,'Gaussian2DFilter']]],
-  ['kernelsize_1',['kernelSize',['../class_box2_d_filter.html#a75944dd19c872d5e675c56d350819580',1,'Box2DFilter::kernelSize'],['../class_gaussian2_d_filter.html#ac0ccfd77cb39766a5c4cd6c0e12be2e1',1,'Gaussian2DFilter::kernelSize'],['../class_gaussian3_d_filter.html#a1c6cea2bb7e6c095a83d42e7c70ce784',1,'Gaussian3DFilter::kernelSize'],['../class_median2_d_filter.html#ad76b3ac82c79aaa8de4f42b6f813e670',1,'Median2DFilter::kernelSize'],['../class_median3_d_filter.html#ac8ede136d079e07c7d5ed4769d9fee6a',1,'Median3DFilter::kernelSize']]]
+  ['library_0',['Multi-Dimension Image Processing Library',['../index.html',1,'']]],
+  ['license_1',['License',['../index.html#autotoc_md10',1,'']]],
+  ['loadfromdirectory_2',['loadFromDirectory',['../class_volume.html#aec2d5b8d0f6a7e2ee8ce7403496dd82d',1,'Volume']]],
+  ['loadfromfile_3',['loadFromFile',['../class_image.html#aaf2ae83a1369ab29535ebfd06554e59f',1,'Image']]],
+  ['loadfromfiles_4',['loadFromFiles',['../class_volume.html#a4fb4494e6be59b9e67e91b5b12df6898',1,'Volume']]]
 ];

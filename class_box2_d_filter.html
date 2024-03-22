@@ -133,7 +133,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if the kernelSize is not an odd number, ensuring proper filter application.</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if the kernelSize is not an odd number, ensuring proper filter application. </td></tr>
   </table>
   </dd>
 </dl>
@@ -159,7 +159,7 @@ Private Attributes</h2></td></tr>
 <p>This method implements the spatial averaging of pixel values across a specified neighborhood around each pixel in the image, based on the kernel size and padding type provided during the object's construction. The process involves iterating over each pixel in the image, collecting pixel values from its neighborhood as defined by the kernel size, and then calculating the average of these values. The result is a blurred or smoothed version of the original image, with the degree of blurring dependent on the size of the kernel. Edge pixels are handled according to the specified padding strategy, which determines how pixels outside the image boundaries are treated for the purposes of the filter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object representing the image to be processed. The <a class="el" href="class_image.html">Image</a> object must be initialized and loaded with data prior to calling this method. The method modifies the <a class="el" href="class_image.html">Image</a> object in place, replacing its pixel data with the filtered results.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object representing the image to be processed. The <a class="el" href="class_image.html">Image</a> object must be initialized and loaded with data prior to calling this method. The method modifies the <a class="el" href="class_image.html">Image</a> object in place, replacing its pixel data with the filtered results. </td></tr>
   </table>
   </dd>
 </dl>

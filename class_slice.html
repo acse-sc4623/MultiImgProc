@@ -124,6 +124,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Default constructor for the <a class="el" href="class_slice.html">Slice</a> class.</p>
+<p>The default constructor of the <a class="el" href="class_slice.html">Slice</a> class is private and deleted to prevent the creation of <a class="el" href="class_slice.html">Slice</a> objects. The <a class="el" href="class_slice.html">Slice</a> class provides a static member function for extracting slices from 3D volumes and does not require instantiation. By making the constructor private and deleted, the class enforces this design pattern and ensures that no <a class="el" href="class_slice.html">Slice</a> objects can be created. </p>
 
 </div>
 </div>
@@ -149,6 +151,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Destructor for the <a class="el" href="class_slice.html">Slice</a> class.</p>
+<p>The destructor of the <a class="el" href="class_slice.html">Slice</a> class is private and deleted to prevent the destruction of <a class="el" href="class_slice.html">Slice</a> objects. Since the <a class="el" href="class_slice.html">Slice</a> class does not have any member variables or instance-specific functionality, there is no need to create or destroy <a class="el" href="class_slice.html">Slice</a> objects. By making the destructor private and deleted, the class enforces this design pattern and ensures that no <a class="el" href="class_slice.html">Slice</a> objects can be destroyed, maintaining the static nature of the <a class="el" href="class_slice.html">Slice</a> class. </p>
 
 </div>
 </div>
@@ -212,7 +216,7 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: A vector of unsigned char containing the data of the requested slice. Returns an empty vector if an error occurs.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: A vector of unsigned char containing the data of the requested slice. Returns an empty vector if an error occurs. </dd></dl>
 
 </div>
 </div>

@@ -160,6 +160,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Private constructor to prevent copy construction.</p>
+<p>The copy constructor is declared private to prevent unintentional deep copies of image data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="class_image.html">Image</a> object to copy </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -177,6 +185,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Default constructor for the <a class="el" href="class_image.html">Image</a> class.</p>
+<p>The default constructor initializes the image dimensions and data to zero. </p>
 
 </div>
 </div>
@@ -208,6 +218,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructor for the <a class="el" href="class_image.html">Image</a> class with specified dimensions and data.</p>
+<p>This constructor initializes the image with the specified dimensions and data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The width of the image </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the image </td></tr>
+    <tr><td class="paramname">channels</td><td>The number of color channels in the image </td></tr>
+    <tr><td class="paramname">data</td><td>The image data as an array of unsigned char </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -225,6 +246,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Destructor for the <a class="el" href="class_image.html">Image</a> class.</p>
+<p>The destructor frees the memory allocated for the image data. </p>
 
 </div>
 </div>
@@ -243,6 +266,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get the number of color channels in the image.</p>
+<p>This member function returns the number of color channels in the image.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of color channels in the image </dd></dl>
 
 </div>
 </div>
@@ -260,6 +286,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get the image data.</p>
+<p>This member function returns a pointer to the image data.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the image data </dd></dl>
 
 </div>
 </div>
@@ -277,6 +306,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get the height of the image.</p>
+<p>This member function returns the height of the image.</p>
+<dl class="section return"><dt>Returns</dt><dd>The height of the image </dd></dl>
 
 </div>
 </div>
@@ -294,6 +326,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get the width of the image.</p>
+<p>This member function returns the width of the image.</p>
+<dl class="section return"><dt>Returns</dt><dd>The width of the image </dd></dl>
 
 </div>
 </div>
@@ -319,7 +354,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: A boolean value indicating the success (true) or failure (false) of loading the image.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: A boolean value indicating the success (true) or failure (false) of loading the image. </dd></dl>
 
 </div>
 </div>
@@ -345,6 +380,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Private assignment operator to prevent assignment.</p>
+<p>The assignment operator is declared private to prevent unintentional deep copies of image data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="class_image.html">Image</a> object to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reference to the assigned <a class="el" href="class_image.html">Image</a> object </dd></dl>
 
 </div>
 </div>
@@ -370,7 +414,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: A boolean value indicating the success (true) or failure (false) of the save operation.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: A boolean value indicating the success (true) or failure (false) of the save operation. </dd></dl>
 
 </div>
 </div>
@@ -388,6 +432,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set the number of color channels in the image.</p>
+<p>This member function sets the number of color channels in the image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channels</td><td>The new number of color channels in the image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -405,6 +457,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set the height of the image.</p>
+<p>This member function sets the height of the image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>The new height of the image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -422,6 +482,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set the width of the image.</p>
+<p>This member function sets the width of the image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The new width of the image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -439,6 +507,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Update the image data.</p>
+<p>This member function updates the image data with the specified data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The new image data as an array of unsigned char </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

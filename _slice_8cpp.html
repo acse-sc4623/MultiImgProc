@@ -82,6 +82,7 @@ $(function() {
 <p>Implements functionality to extract 2D slices from a 3D volume.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_slice_8h_source.html">Slice.h</a>&quot;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -89,13 +90,15 @@ Include dependency graph for Slice.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_slice_8cpp__incl.png" border="0" usemap="#a_source_2_slice_8cpp" alt=""/></div>
 <map name="a_source_2_slice_8cpp" id="a_source_2_slice_8cpp">
-<area shape="rect" title="Implements functionality to extract 2D slices from a 3D volume." alt="" coords="229,5,349,31"/>
+<area shape="rect" title="Implements functionality to extract 2D slices from a 3D volume." alt="" coords="262,5,382,31"/>
 <area shape="rect" href="_slice_8h.html" title="Facilitates extraction of 2D slices from 3D volume data." alt="" coords="161,79,222,105"/>
-<area shape="poly" title=" " alt="" coords="274,34,221,72,218,68,271,29"/>
+<area shape="poly" title=" " alt="" coords="301,34,228,74,225,69,299,29"/>
 <area shape="rect" title=" " alt="" coords="262,226,315,252"/>
-<area shape="poly" title=" " alt="" coords="291,31,291,211,286,211,286,31"/>
-<area shape="rect" title=" " alt="" coords="326,79,398,105"/>
-<area shape="poly" title=" " alt="" coords="303,29,341,66,337,70,299,33"/>
+<area shape="poly" title=" " alt="" coords="323,32,295,211,290,210,318,31"/>
+<area shape="rect" title=" " alt="" coords="327,79,387,105"/>
+<area shape="poly" title=" " alt="" coords="330,30,346,64,342,66,325,32"/>
+<area shape="rect" title=" " alt="" coords="410,79,482,105"/>
+<area shape="poly" title=" " alt="" coords="344,29,413,69,411,73,342,34"/>
 <area shape="rect" href="_volume_8h.html" title="Manages 3D volumetric data for processing and analysis." alt="" coords="124,153,200,178"/>
 <area shape="poly" title=" " alt="" coords="189,106,175,139,170,137,184,104"/>
 <area shape="rect" title=" " alt="" coords="5,226,63,252"/>
@@ -113,15 +116,15 @@ Include dependency graph for Slice.cpp:</div>
 <div class="textblock"><p>Implements functionality to extract 2D slices from a 3D volume. </p>
 <p>The <a class="el" href="class_slice.html">Slice</a> class provides a method for extracting specific 2D slices from a 3D volumetric dataset, based on given dimensions, raw data, and the desired orientation. The class supports extraction along the 'x-y', 'x-z', and 'y-z' planes, accommodating a range of visualization and analysis needs. This flexibility allows users to examine the internal structure of the volume from different perspectives, facilitating a deeper understanding of the data. The method validates the requested slice index and plane orientation, ensuring the integrity of the returned slice. It serves as a crucial tool in domains where 3D volumetric data is prevalent, such as medical imaging, geospatial analysis, and scientific research, by simplifying the process of volumetric data exploration.</p>
 <dl class="section date"><dt>Date</dt><dd>Created on March 18, 2024</dd></dl>
-<p>Group: Advanced Programming Group Radix Sort</p>
-<p>Developers:</p><ul>
-<li>Benjamin Duncan</li>
-<li>Boyang Hu</li>
-<li>Chawk Chamoun</li>
-<li>Mingsheng Cai</li>
-<li>Moyu Zhang</li>
-<li>Ryan Benney </li>
+<dl class="section author"><dt>Authors</dt><dd>Advanced Programming Group Radix Sort:<ul>
+<li>Benjamin Duncan (edsml-bd1023)</li>
+<li>Boyang Hu (edsml-bh223)</li>
+<li>Chawk Chamoun (edsml-cc8915)</li>
+<li>Mingsheng Cai (acse-sc4623)</li>
+<li>Moyu Zhang (acse-mz223)</li>
+<li>Ryan Benney (acse-rgb123) </li>
 </ul>
+</dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

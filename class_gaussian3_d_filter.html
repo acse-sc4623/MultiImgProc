@@ -160,7 +160,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if kernelSize is not an odd number.</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if kernelSize is not an odd number. </td></tr>
   </table>
   </dd>
 </dl>
@@ -194,7 +194,7 @@ Private Attributes</h2></td></tr>
 <p>This method orchestrates the application of the Gaussian filter to a 3D volume, smoothing the volume along all three axes (X, Y, and Z) sequentially. It achieves this by calling the applyGaussian1DFilter_X, applyGaussian1DFilter_Y, and applyGaussian1DFilter_Z methods in succession, each applying the Gaussian kernel along one axis. The process results in a volume that is uniformly smoothed, reducing noise while preserving important structural information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volume</td><td>A reference to the <a class="el" href="class_volume.html">Volume</a> object representing the 3D data to be filtered.</td></tr>
+    <tr><td class="paramname">volume</td><td>A reference to the <a class="el" href="class_volume.html">Volume</a> object representing the 3D data to be filtered. </td></tr>
   </table>
   </dd>
 </dl>
@@ -246,7 +246,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">data</td><td>A reference to a vector of unsigned char representing the volume data to be filtered. </td></tr>
     <tr><td class="paramname">width</td><td>The width of the volume. </td></tr>
     <tr><td class="paramname">height</td><td>The height of the volume. </td></tr>
-    <tr><td class="paramname">depth</td><td>The depth of the volume.</td></tr>
+    <tr><td class="paramname">depth</td><td>The depth of the volume. </td></tr>
   </table>
   </dd>
 </dl>
@@ -296,7 +296,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">data</td><td>A reference to a vector of unsigned char representing the volume data to be filtered. </td></tr>
     <tr><td class="paramname">width</td><td>The width of the volume. </td></tr>
     <tr><td class="paramname">height</td><td>The height of the volume. </td></tr>
-    <tr><td class="paramname">depth</td><td>The depth of the volume.</td></tr>
+    <tr><td class="paramname">depth</td><td>The depth of the volume. </td></tr>
   </table>
   </dd>
 </dl>
@@ -346,7 +346,7 @@ Private Attributes</h2></td></tr>
     <tr><td class="paramname">data</td><td>A reference to a vector of unsigned char representing the volume data to be filtered. </td></tr>
     <tr><td class="paramname">width</td><td>The width of the volume. </td></tr>
     <tr><td class="paramname">height</td><td>The height of the volume. </td></tr>
-    <tr><td class="paramname">depth</td><td>The depth of the volume.</td></tr>
+    <tr><td class="paramname">depth</td><td>The depth of the volume. </td></tr>
   </table>
   </dd>
 </dl>
@@ -377,7 +377,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Computes a 1D Gaussian kernel.</p>
 <p>This member function calculates the coefficients of a 1D Gaussian kernel based on the class's sigma (standard deviation) and kernel size. The coefficients are computed using the Gaussian formula and are then normalized to ensure that the sum of the kernel coefficients is 1. This normalization is essential for maintaining the original amplitude of the signal after filtering. The computed kernel is symmetric and centered, suitable for convolution operations in one dimension.</p>
-<dl class="section return"><dt>Returns</dt><dd>: A vector of doubles containing the normalized coefficients of the 1D Gaussian kernel.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>: A vector of doubles containing the normalized coefficients of the 1D Gaussian kernel. </dd></dl>
 
 </div>
 </div>

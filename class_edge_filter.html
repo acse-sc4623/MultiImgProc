@@ -136,6 +136,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructs an <a class="el" href="class_edge_filter.html">EdgeFilter</a> object with the specified filter type and padding type.</p>
+<p>This constructor initializes an <a class="el" href="class_edge_filter.html">EdgeFilter</a> object with the specified edge detection filter type and padding type. The filter type determines the edge detection algorithm to be applied, while the padding type specifies the padding strategy to handle edge pixels during convolution. The constructed <a class="el" href="class_edge_filter.html">EdgeFilter</a> object can be used to apply edge detection to grayscale images.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of edge detection filter to be used (Sobel, Prewitt, Scharr, or Roberts). </td></tr>
+    <tr><td class="paramname">paddingType</td><td>The padding strategy to be applied during convolution (ZeroPadding, ReplicatePadding, or ReflectPadding). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -158,7 +167,7 @@ Private Attributes</h2></td></tr>
 <p>This method applies the selected edge detection algorithm to the provided <a class="el" href="class_image.html">Image</a> object if the image is in grayscale format. It first checks if the image is suitable for edge detection by calling isGrayscale. If the image is not in grayscale, an error message is printed, and the function returns without modifying the image. Otherwise, it proceeds to apply the chosen edge detection algorithm, updating the image with the detected edges.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object on which the edge detection filter will be applied. The <a class="el" href="class_image.html">Image</a> object must be initialized and loaded with image data prior to calling this method.</td></tr>
+    <tr><td class="paramname">image</td><td>A reference to an <a class="el" href="class_image.html">Image</a> object on which the edge detection filter will be applied. The <a class="el" href="class_image.html">Image</a> object must be initialized and loaded with image data prior to calling this method. </td></tr>
   </table>
   </dd>
 </dl>
@@ -191,7 +200,7 @@ Private Attributes</h2></td></tr>
 <p>This method utilizes the Prewitt operator to detect edges in the provided grayscale image. Similar to the Sobel filter, it employs horizontal and vertical kernels to compute the gradient magnitude at each pixel, effectively highlighting the edges. The Prewitt operator is known for its simplicity and effectiveness in edge detection, making it suitable for various image processing tasks where edge delineation is required.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Prewitt filter will be applied. The image should be in grayscale format for the algorithm to function correctly.</td></tr>
+    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Prewitt filter will be applied. The image should be in grayscale format for the algorithm to function correctly. </td></tr>
   </table>
   </dd>
 </dl>
@@ -224,7 +233,7 @@ Private Attributes</h2></td></tr>
 <p>The Roberts Cross operator is one of the earliest yet effective methods for edge detection, focusing on highlighting high-frequency components in the image. It computes the gradient magnitude using a pair of 2x2 convolution kernels. This simplicity makes it particularly fast and suitable for detecting edges in images with minimal computational resources. Despite its age, it remains effective for applications where quick edge detection is more critical than precision.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Roberts Cross filter will be applied. The algorithm expects the image to be in grayscale format for accurate edge detection.</td></tr>
+    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Roberts Cross filter will be applied. The algorithm expects the image to be in grayscale format for accurate edge detection. </td></tr>
   </table>
   </dd>
 </dl>
@@ -257,7 +266,7 @@ Private Attributes</h2></td></tr>
 <p>The Scharr method is an enhancement over the Sobel operator, offering better rotation symmetry and a higher weight to pixels directly adjacent to the center pixel. This method applies Scharr's specific kernels to calculate the gradient magnitude at each pixel of the provided grayscale image, aiming to accurately detect edges with a higher sensitivity to subtle changes in intensity, thereby producing a more defined edge map.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Scharr filter will be applied. It is essential that the image is in grayscale format to ensure the algorithm performs as expected.</td></tr>
+    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Scharr filter will be applied. It is essential that the image is in grayscale format to ensure the algorithm performs as expected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -290,7 +299,7 @@ Private Attributes</h2></td></tr>
 <p>This method implements the Sobel edge detection algorithm, which uses two 3x3 kernels to calculate the gradient magnitude at each pixel in the provided grayscale image. The gradient magnitude represents the edge strength. The resulting edge map replaces the original image data. This method is suitable for highlighting horizontal and vertical edges in the image.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Sobel filter will be applied. The image must be in grayscale format.</td></tr>
+    <tr><td class="paramname">image</td><td>A constant reference to an <a class="el" href="class_image.html">Image</a> object to which the Sobel filter will be applied. The image must be in grayscale format. </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,7 +336,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the image has only one channel, indicating it is a grayscale image; false otherwise.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the image has only one channel, indicating it is a grayscale image; false otherwise. </dd></dl>
 
 </div>
 </div>

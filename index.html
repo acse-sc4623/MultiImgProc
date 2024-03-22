@@ -78,7 +78,7 @@ $(function() {
 <p>This project provides a comprehensive toolkit for 2D/3D image processing, including utilities for loading, manipulating, and saving both 2D and 3D image data. It is designed to facilitate advanced image processing tasks such as filtering, projection, slicing of volumetric data, and edge detection. This library is particularly suited for applications in medical imaging, scientific visualization, 3D data analysis, and real-time image enhancement.</p>
 <p>For more details, please check:</p>
 <ul>
-<li>Webpage document: <code>./Docs/html/index.html</code></li>
+<li>Webpage document: <a href="https://acse-sc4623.github.io/MultiImgProc">Our Website</a> or <code>./Docs/html/index.html</code></li>
 <li>User manual: <code>./Docs/Manual_Multi-Dimension_Image_Processing_Library.pdf</code></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md1"></a>
@@ -154,6 +154,10 @@ Prerequisites</h2>
 <p>Ensure you have a modern C++ compiler that supports C++17 and the CMake build system installed on your system. This project also requires the <code>filesystem</code> library for directory operations.</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Building the Project</h2>
+<p>We have a shell script to automatically run the build commands, do the unit tests and start the command line user interface.</p>
+<p>You can simply run command below in your terminal and everything will be done directly.</p>
+<div class="fragment"><div class="line">./run.sh</div>
+</div><!-- fragment --><p>If you prefer using CMake and want to build the project manually, Please follow:</p>
 <ol type="1">
 <li>Clone the repository to your local machine.</li>
 <li><p class="startli">Navigate to the project directory and create a build directory:</p>
@@ -166,8 +170,10 @@ Building the Project</h2>
 <div class="fragment"><div class="line">cmake --build .</div>
 </div><!-- fragment --></li>
 </ol>
+<p>The CMakeList files have turned on the compilation optimization by default.</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Usage</h1>
+<p>We prefer users to operate through the interface we've provided. Please follow the instructions above to build and run the project.</p>
 <p>To use the library in your project, include the necessary header files from the <code>Include</code> directory and link against the compiled library.</p>
 <p>Here's an example demonstrating how to load a image / volume from disk, apply various filters, and save a filtered file / maximum intensity projection:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="_volume_8h.html">Volume.h</a>&quot;</span></div>
@@ -220,17 +226,17 @@ Usage</h1>
 <div class="ttc" id="a_pixel_filter_8h_html"><div class="ttname"><a href="_pixel_filter_8h.html">PixelFilter.h</a></div><div class="ttdoc">Defines the PixelFilter class for pixel-level image processing operations.</div></div>
 <div class="ttc" id="a_projection_8h_html"><div class="ttname"><a href="_projection_8h.html">Projection.h</a></div><div class="ttdoc">Provides projection techniques for 3D data visualization.</div></div>
 <div class="ttc" id="a_volume_8h_html"><div class="ttname"><a href="_volume_8h.html">Volume.h</a></div><div class="ttdoc">Manages 3D volumetric data for processing and analysis.</div></div>
-<div class="ttc" id="aclass_edge_filter_html"><div class="ttname"><a href="class_edge_filter.html">EdgeFilter</a></div><div class="ttdef"><b>Definition</b> EdgeFilter.h:42</div></div>
-<div class="ttc" id="aclass_gaussian2_d_filter_html"><div class="ttname"><a href="class_gaussian2_d_filter.html">Gaussian2DFilter</a></div><div class="ttdef"><b>Definition</b> Gaussian2DFilter.h:37</div></div>
-<div class="ttc" id="aclass_gaussian3_d_filter_html"><div class="ttname"><a href="class_gaussian3_d_filter.html">Gaussian3DFilter</a></div><div class="ttdef"><b>Definition</b> Gaussian3DFilter.h:34</div></div>
-<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition</b> Image.h:34</div></div>
-<div class="ttc" id="aclass_image_html_a1e5bba4e0dc67e2a93bd0d90e9c71e97"><div class="ttname"><a href="class_image.html#a1e5bba4e0dc67e2a93bd0d90e9c71e97">Image::saveToFile</a></div><div class="ttdeci">bool saveToFile(const std::string &amp;path) const</div><div class="ttdef"><b>Definition</b> Image.cpp:104</div></div>
-<div class="ttc" id="aclass_image_html_aaf2ae83a1369ab29535ebfd06554e59f"><div class="ttname"><a href="class_image.html#aaf2ae83a1369ab29535ebfd06554e59f">Image::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> Image.cpp:83</div></div>
-<div class="ttc" id="aclass_pixel_filter_html"><div class="ttname"><a href="class_pixel_filter.html">PixelFilter</a></div><div class="ttdef"><b>Definition</b> PixelFilter.h:36</div></div>
-<div class="ttc" id="aclass_volume_html"><div class="ttname"><a href="class_volume.html">Volume</a></div><div class="ttdef"><b>Definition</b> Volume.h:38</div></div>
-<div class="ttc" id="aclass_volume_html_a7cefc977aa07f53dd0ead4b1f6a285a9"><div class="ttname"><a href="class_volume.html#a7cefc977aa07f53dd0ead4b1f6a285a9">Volume::save</a></div><div class="ttdeci">void save(const std::string &amp;path, const std::string &amp;plane) const</div><div class="ttdef"><b>Definition</b> Volume.cpp:221</div></div>
-<div class="ttc" id="aclass_volume_html_aec2d5b8d0f6a7e2ee8ce7403496dd82d"><div class="ttname"><a href="class_volume.html#aec2d5b8d0f6a7e2ee8ce7403496dd82d">Volume::loadFromDirectory</a></div><div class="ttdeci">bool loadFromDirectory(const std::string &amp;directoryPath)</div><div class="ttdef"><b>Definition</b> Volume.cpp:179</div></div>
-<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> main.cpp:52</div></div>
+<div class="ttc" id="aclass_edge_filter_html"><div class="ttname"><a href="class_edge_filter.html">EdgeFilter</a></div><div class="ttdef"><b>Definition</b> EdgeFilter.h:41</div></div>
+<div class="ttc" id="aclass_gaussian2_d_filter_html"><div class="ttname"><a href="class_gaussian2_d_filter.html">Gaussian2DFilter</a></div><div class="ttdef"><b>Definition</b> Gaussian2DFilter.h:36</div></div>
+<div class="ttc" id="aclass_gaussian3_d_filter_html"><div class="ttname"><a href="class_gaussian3_d_filter.html">Gaussian3DFilter</a></div><div class="ttdef"><b>Definition</b> Gaussian3DFilter.h:33</div></div>
+<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition</b> Image.h:33</div></div>
+<div class="ttc" id="aclass_image_html_a1e5bba4e0dc67e2a93bd0d90e9c71e97"><div class="ttname"><a href="class_image.html#a1e5bba4e0dc67e2a93bd0d90e9c71e97">Image::saveToFile</a></div><div class="ttdeci">bool saveToFile(const std::string &amp;path) const</div><div class="ttdef"><b>Definition</b> Image.cpp:105</div></div>
+<div class="ttc" id="aclass_image_html_aaf2ae83a1369ab29535ebfd06554e59f"><div class="ttname"><a href="class_image.html#aaf2ae83a1369ab29535ebfd06554e59f">Image::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> Image.cpp:90</div></div>
+<div class="ttc" id="aclass_pixel_filter_html"><div class="ttname"><a href="class_pixel_filter.html">PixelFilter</a></div><div class="ttdef"><b>Definition</b> PixelFilter.h:35</div></div>
+<div class="ttc" id="aclass_volume_html"><div class="ttname"><a href="class_volume.html">Volume</a></div><div class="ttdef"><b>Definition</b> Volume.h:37</div></div>
+<div class="ttc" id="aclass_volume_html_a7cefc977aa07f53dd0ead4b1f6a285a9"><div class="ttname"><a href="class_volume.html#a7cefc977aa07f53dd0ead4b1f6a285a9">Volume::save</a></div><div class="ttdeci">void save(const std::string &amp;path, const std::string &amp;plane) const</div><div class="ttdef"><b>Definition</b> Volume.cpp:183</div></div>
+<div class="ttc" id="aclass_volume_html_aec2d5b8d0f6a7e2ee8ce7403496dd82d"><div class="ttname"><a href="class_volume.html#aec2d5b8d0f6a7e2ee8ce7403496dd82d">Volume::loadFromDirectory</a></div><div class="ttdeci">bool loadFromDirectory(const std::string &amp;directoryPath)</div><div class="ttdef"><b>Definition</b> Volume.cpp:155</div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> main.cpp:51</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
 Contributing</h1>
 <p>Contributions to enhance the functionality or performance of this library are welcome. Please follow the standard fork-branch-PR workflow.</p>
